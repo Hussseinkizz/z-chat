@@ -1,0 +1,94 @@
+body {
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    width: 60%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    background: #f5f5f5;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    gap: 1rem;
+}
+
+#messages {
+    display: grid;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    gap: 1rem;
+    padding: 2rem;
+    height: 40dvh;
+    overflow-y: auto;
+}
+
+.msg-card {
+    width: 300px;
+    min-width: 150px;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.msg-card.incoming {
+    justify-self: end;
+}
+
+.msg-card.outgoing {
+    justify-self: start;
+}
+
+.user-name {
+    width: 100%;
+    color: #5d7a5d;
+    border-bottom: 1px solid #ccc;
+}
+
+.title {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-block: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    .flex {
+        gap: 0.25rem;
+        margin-bottom: 0.5rem;
+        flex-direction: column;
+    }
+    .flex-col {
+        gap: 0.25rem;
+    }
+}

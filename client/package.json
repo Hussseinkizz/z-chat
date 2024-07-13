@@ -1,0 +1,14 @@
+{
+  "name": "z-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io-client": "^4.7.5",
+    "vite": "^5.3.3",
+    "z-js-framework": "^0.0.4"
+  }
+}
